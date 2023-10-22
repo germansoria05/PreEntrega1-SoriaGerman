@@ -1,0 +1,12 @@
+.titulo {
+    color: rgb(130, 35, 35);
+    text-align: center ;
+    padding-top: 1em;
+}
+
+.imagen {
+    width: 150px;
+  height: 100px;
+  float: inline-start;
+
+}
