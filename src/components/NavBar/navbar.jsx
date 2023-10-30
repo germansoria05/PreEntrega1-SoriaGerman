@@ -10,9 +10,10 @@ const NavBar  =()=> {
             <li><a href="#">Bicletas</a></li>
             <li><a href="#">Repuestos</a></li>
             <li><a href="#">Contacto</a></li>
-
+            
+            <img className="imagen" src="../src/img/carrito-de-compras.png" alt="Carro de compras" />
         </ul>
-          <img className="imagen" src="../src/img/carrito-de-compras.png" alt="Carro de compras" />
+          
         </nav>
     )
 
