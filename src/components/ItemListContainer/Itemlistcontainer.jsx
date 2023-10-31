@@ -1,9 +1,9 @@
 
 
-const Itemlistcontainer = (greeting) => {
-    console.log(greeting) 
+const Itemlistcontainer = () => {
+   
     return (
-        <h1>Hola</h1>
+        <h1></h1>
     );
 };
 
