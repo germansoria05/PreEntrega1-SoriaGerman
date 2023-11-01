@@ -1,6 +1,7 @@
 
 
-const Itemlistcontainer = () => {
+const Itemlistcontainer = (greeting) => {
+    console.log(greeting)
    
     return (
         <h1></h1>
