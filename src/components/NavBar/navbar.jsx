@@ -1,4 +1,5 @@
 import "./navbar.css"
+import Cartwidget from "../Cartwidget/Cartwidget";
 
 const NavBar  =()=> {
    
@@ -6,14 +7,16 @@ const NavBar  =()=> {
         <nav>
         <h1 className="titulo">Pina-Shop</h1>
         <ul>
-            <li><a href="#">Inicio</a></li>
-            <li><a href="#">Bicletas</a></li>
-            <li><a href="#">Repuestos</a></li>
-            <li><a href="#">Contacto</a></li>
             
-            <img className="imagen" src="../src/img/carrito-de-compras.png" alt="Carro de compras" />
+            <li><a href="#">Bicletas</a></li>
+
+            <li><a href="#">Repuestos</a></li>
+
+            <li><a href="#">Accesorios</a></li>
+            
+            
         </ul>
-          
+          <Cartwidget/>
         </nav>
     )
 

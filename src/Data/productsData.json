@@ -1,0 +1,32 @@
+[
+    {
+        "id": "1",
+        "title": "Bici mojave 5.0",
+        "description": "La Raleigh Mojave 5.0 es la bicicleta ideal si sos un entusiasta del Mtb, montada en un cuadro de aluminio liviano y resistente, horquilla con suspensión Suntour XCR32 con bloqueo remoto, ruedas rodado 29er para pasar por arriba de todo, y transmisión Shimano Deore M5100 monoplato de 11 velocidades.",
+        "price": "380.000",
+        "image": "../../img/carrito-de-compras.png"
+        
+        
+
+
+
+    },
+    {
+        "id": "2",
+        "title": "Bici SBK Fat 26",
+        "description": " Las Fatbike son bicicletas especiales por el ancho de sus ruedas. Creadas originalmente para ser usadas en todo tipo de terrenos, nieve, arena, montaña. Son además muy cómodas para usar en la ciudad ya que aportan estabilidad.",
+        "price": "265.000",
+        "image": "../img/Bicis/Negra y verde.jpg"
+
+
+    },   
+    {
+        "id": "3",
+        "title": "Bici FireBird r.29",
+        "description": "La Bicicleta con 21 Velocidades Shimano, frenos a disco, suspension delantera y su nuevo cuadro rediseñado, es la opción ideal para aquellos que poseen un nivel inicial en ciclismo de montaña.",
+        "price": "170.000",
+        "image": "../img/bicis/Gris y verda.jpg"
+
+
+    }
+]
