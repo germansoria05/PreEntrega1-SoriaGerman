@@ -1,32 +1,44 @@
 [
-    {
-        "id": "1",
-        "title": "Bici mojave 5.0",
-        "description": "La Raleigh Mojave 5.0 es la bicicleta ideal si sos un entusiasta del Mtb, montada en un cuadro de aluminio liviano y resistente, horquilla con suspensión Suntour XCR32 con bloqueo remoto, ruedas rodado 29er para pasar por arriba de todo, y transmisión Shimano Deore M5100 monoplato de 11 velocidades.",
-        "price": "380.000",
-        "image": "../../img/carrito-de-compras.png"
-        
-        
+  {
+    "id": "1",
+    "title": "Bici mojave 5.0",
+    "description": "La Raleigh Mojave 5.0 es la bicicleta ideal si sos un entusiasta del Mtb, montada en un cuadro de aluminio liviano y resistente, horquilla con suspensión Suntour XCR32 con bloqueo remoto, ruedas rodado 29er para pasar por arriba de todo, y transmisión Shimano Deore M5100 monoplato de 11 velocidades.",
+    "category": "bicicletas",
+    "price": "380.000",
+    "image": "../img/Bicis/Negra.jpg"
+  },
+  {
+    "id": "2",
+    "title": "Bici SBK Fat 26",
+    "description": " Las Fatbike son bicicletas especiales por el ancho de sus ruedas. Creadas originalmente para ser usadas en todo tipo de terrenos, nieve, arena, montaña. Son además muy cómodas para usar en la ciudad ya que aportan estabilidad.",
+    "category": "bicicletas",
+    "price": "265.000",
+    "image": "../img/Bicis/Negra y verde.jpg"
+  },
+  {
+    "id": "3",
+    "title": "Bici FireBird r.29",
+    "description": "La Bicicleta con 21 Velocidades Shimano, frenos a disco, suspension delantera y su nuevo cuadro rediseñado, es la opción ideal para aquellos que poseen un nivel inicial en ciclismo de montaña.",
+    "category": "bicicletas",
+    "price": "170.000",
+    "image": "../img/bicis/Gris y verda.jpg"
+  },
 
+  {
+    "id": "4",
+    "title": "Cepillo",
+    "description": "Cepillo limpia piñon",
+    "category": "accesorios",
+    "price": "2500",
+    "image": "../img/accesorios/Cepillo.jpg"
+  },
 
-
-    },
-    {
-        "id": "2",
-        "title": "Bici SBK Fat 26",
-        "description": " Las Fatbike son bicicletas especiales por el ancho de sus ruedas. Creadas originalmente para ser usadas en todo tipo de terrenos, nieve, arena, montaña. Son además muy cómodas para usar en la ciudad ya que aportan estabilidad.",
-        "price": "265.000",
-        "image": "../img/Bicis/Negra y verde.jpg"
-
-
-    },   
-    {
-        "id": "3",
-        "title": "Bici FireBird r.29",
-        "description": "La Bicicleta con 21 Velocidades Shimano, frenos a disco, suspension delantera y su nuevo cuadro rediseñado, es la opción ideal para aquellos que poseen un nivel inicial en ciclismo de montaña.",
-        "price": "170.000",
-        "image": "../img/bicis/Gris y verda.jpg"
-
-
-    }
+  {
+    "id": "5",
+    "title": "Pedales de ruta Keo",
+    "description": "Los pedales de ruta Keo son un tipo de sistema de pedales diseñado específicamente para bicicletas de carretera o ruta. Estos pedales son conocidos por su ligereza, eficiencia de transferencia de potencia y diseño aerodinámico.",
+    "category": "repuestos",
+    "price": "15000",
+    "image": "../img/repuestos/Pedales1.jpg"
+  }
 ]

@@ -28,13 +28,14 @@ const ItemCount = ({ initial, stock, onAdd }) => {
       <button onClick={increment} disabled={count == stock}>
         +
       </button>
-      <button onClick={{} => onAdd{}}>Agregar<button/>
+     <button> </button>
       </div>
-      
+
         
       
    
   );
 };
+
 
 export default ItemCount;

@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import ItemCount from "../ItemCount/ItemCount";
+import { Link } from "react-router-dom";
 
 
 const ItemDetail = ({ item }) => {
@@ -9,16 +10,25 @@ const ItemDetail = ({ item }) => {
   const Onadd = (quantityToAdd) => {
     setquantity(quantityToAdd)
 
-  }
+  };
+ 
+  
   return (
-    <article>
-      <p>Titulo: {item.title}</p>
-      <p>Descripcion: {item.description}</p>
-      <p>Precio: {item.price}</p>
-      <p>Imagen:{item.image}</p>
-      <ItemCount initial={1} stock={10} Onadd={Onadd} />
-    
-    </article>
+    <article className="card">
+      <div className="img-container">
+        <img src={item.img} className="card-img"/>
+      </div>
+      <div className="card-description">
+        <p className="card-title">{item.title}</p>
+
+        <p>{item.description}</p>
+        <p>Precio: $ {item.price}</p>
+        {quantity ? ( <Link to= {"/carrito"}>Ver {quantity} productos en carrito</Link>
+        ) : (  <ItemCount initial={1} stock={10} Onadd={Onadd} />
+        
+        )}
+      </div>
+      </article>
   );
 };
 
