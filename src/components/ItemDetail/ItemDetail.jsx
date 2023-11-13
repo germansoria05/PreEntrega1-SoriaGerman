@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import ItemCount from "../ItemCount/ItemCount";
-import { Link } from "react-router-dom";
+
+
 
 
 const ItemDetail = ({ item }) => {
@@ -12,11 +13,12 @@ const ItemDetail = ({ item }) => {
 
   };
  
-  
+
   return (
+    
     <article className="card">
       <div className="img-container">
-        <img src={item.img} className="card-img"/>
+        <img src={item.image} className="card-img"/>
       </div>
       <div className="card-description">
         <p className="card-title">{item.title}</p>

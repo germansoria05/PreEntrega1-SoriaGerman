@@ -2,8 +2,8 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import "./App.css";
 import NavBar from "./components/NAvBar/NavBar";
 import ItemDetailContainer from "./components/ItemDetailContainer/ItemDetailContainer";
-import Itemlistcontainer from './components/ItemListContainer/Itemlistcontainer'
-import { links } from "react-router-dom";
+import Itemlistcontainer from "./components/ItemListContainer/Itemlistcontainer"
+import {Link} from "react-router-dom";
 import CartView from "./components/CartView/CartView";
 
 
@@ -15,7 +15,7 @@ function App() {
     <>
    <BrowserRouter>
    <NavBar links={enlaces} />
-   
+   <Link/>
     <Routes>
       <Route 
       path="/" 

@@ -1,41 +1,37 @@
-import React, {useState, useEffect} from 'react';
+import React, { useState, useEffect, } from "react";
 import productsJson from "../../Data/productsData.json";
-import ItemDetail from '../ItemDetail/ItemDetail';
-import { useParams } from 'react-router-dom';
-import {itemID} from 'react-router-dom';
-
-
+import ItemDetail from "../ItemDetail/ItemDetail";
+import { useParams } from "react-router-dom";
 
 const ItemDetailContainer = () => {
-    const [product, setProduct] = useState(null);
+  const [productsData, setProducts] = useState(null);
+  const { item } = useParams();
 
-    const { itemID } = useParams()
+  useEffect(() => {
+   
+    const fetchData = () => {
+      return new Promise((resolve) => {
+        setTimeout(() => {
+          resolve(productsJson);
+        }, 1000);
+      });
+    };
 
-    useEffect(() => {
-      const getProducts = (productList) =>
-        new Promise((resolve, reject) => {
-          setTimeout(() => {
-            if (productList[0]) {
-              resolve(productList.find ((product) => product.id === itemID));
-            } else {
-              reject("Error");
-            }
-          }, 1000);
-        });
- 
-      getProducts(productsJson)
-        .then((res) => setProduct(res))
-        .catch((err) => console.log("${err}: No disponible"));
-    }, [itemID]);
-  
-  
-    return (
+    fetchData().then((data) => setProducts(data));
+  }, []);
+
+  return (
     <section className="product-detail">
-      <h1>Descripcion</h1>
-        {product ? <ItemDetail item={product}/> : <p>Buscnado...</p>}
-      
+      <h1>Product List</h1>
+      {productsData ? (
+        productsData.map((product) => (
+          <ItemDetail key={product.id} item={product} />
+        ))
+      ) : (
+        <p>Loading...</p>
+      )}
     </section>
-  )
-}
+  );
+};
 
-export default ItemDetailContainer
+export default ItemDetailContainer;
