@@ -7,7 +7,11 @@ const ItemDetailContainer = () => {
   const [productsData, setProducts] = useState(null);
   const { item } = useParams();
 
+  
+
   useEffect(() => {
+
+
    
     const fetchData = () => {
       return new Promise((resolve) => {
@@ -17,8 +21,8 @@ const ItemDetailContainer = () => {
       });
     };
 
-    fetchData().then((data) => setProducts(data));
-  }, []);
+    fetchData(item).then((data) => setProducts(data));
+  }, );
 
   return (
     <section className="product-detail">
